@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int s1,s2,s3,s4,total=0;
+	float aggregate;
+	cout <<"enter s1 marks out of 100 =";
+	cin >>s1;
+	cout <<"enter s2 marks out of 100 =";
+	cin >>s2;
+	cout <<"enter s3 marks out of 100 =";
+	cin >>s3;
+	cout <<"enter s4 marks out of 100 =";
+	cin >>s4;
+	
+	total = s1+s2+s3+s4;
+	  cout <<"total marks ="<< total;
+	aggregate=(total/400)*100;
+	  cout << "aggregate ="<< aggregate;
+	  	if (aggregate>=75)
+	cout<<"grade is distinction";
+    else if(aggregate <75 && aggregate >=65)
+	cout << "grade is FIRST DIVISION";
+	else if(aggregate >=50 && aggregate < 65)
+	cout << "grade is SECOND DIVISION";
+	else if(aggregate >=40 && aggregate< 50)
+	cout << "grade is THIRD DIVISION";
+	else
+	cout<<"FAIL";
+	return 0;
+}
